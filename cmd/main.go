@@ -1,8 +1,11 @@
 package main
 
 import (
+	"github.com/joho/godotenv"
 	"github.com/rs/zerolog"
+	"github.com/tochamateusz/basic/api"
 	"github.com/tochamateusz/basic/modules/logging"
+	"github.com/tochamateusz/basic/modules/server"
 	"go.uber.org/fx"
 	fxevent "go.uber.org/fx/fxevent"
 )
@@ -14,6 +17,8 @@ func InvokeTest(log *zerolog.Logger) {
 }
 
 func main() {
+	godotenv.Load()
+
 	app := fx.New(
 		logging.Module,
 		fx.WithLogger(func(logger *zerolog.Logger) fxevent.Logger {
@@ -21,7 +26,9 @@ func main() {
 				Logger: logger,
 			}
 		}),
-		fx.Invoke(InvokeTest),
+		server.Module,
+		fx.Invoke(server.Run),
+		fx.Invoke(api.Api),
 	)
 
 	app.Run()
