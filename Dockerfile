@@ -8,6 +8,7 @@ COPY go.mod go.sum ./
 RUN go mod download
 
 COPY modules ./modules
+COPY api ./api
 COPY cmd ./cmd
 
 # Build
