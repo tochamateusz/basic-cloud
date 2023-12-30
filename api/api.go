@@ -17,5 +17,9 @@ func Api(r *gin.Engine, l *zerolog.Logger) ApiRouter {
 	api.GET("/", func(ctx *gin.Context) {
 		l.Debug().Msg("test2")
 	})
+
+	api.GET("/test2", func(ctx *gin.Context) {
+		l.Error().Msg("test5")
+	})
 	return api
 }
