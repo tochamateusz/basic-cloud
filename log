@@ -1,0 +1,11 @@
+{"level":"info","constructor":"github.com/tochamateusz/basic/modules/logging.NewLogger()","type":"zerolog.Logger","time":"2023-12-30T13:24:04.069+01:00","message":"provided"}
+{"level":"info","constructor":"github.com/tochamateusz/basic/modules/logging.NewPtrLogger()","type":"*zerolog.Logger","time":"2023-12-30T13:24:04.069+01:00","message":"provided"}
+{"level":"info","constructor":"go.uber.org/fx.New.func1()","type":"fx.Lifecycle","time":"2023-12-30T13:24:04.069+01:00","message":"provided"}
+{"level":"info","constructor":"go.uber.org/fx.(*App).shutdowner-fm()","type":"fx.Shutdowner","time":"2023-12-30T13:24:04.069+01:00","message":"provided"}
+{"level":"info","constructor":"go.uber.org/fx.(*App).dotGraph-fm()","type":"fx.DotGraph","time":"2023-12-30T13:24:04.069+01:00","message":"provided"}
+{"level":"info","function":"main.main.func1()","time":"2023-12-30T13:24:04.069+01:00","message":"installed custom fxevent.Logger"}
+{"level":"trace","time":"2023-12-30T13:24:04.069+01:00","message":"test trace\n"}
+{"level":"debug","time":"2023-12-30T13:24:04.069+01:00","message":"test trace\n"}
+{"level":"info","function":"main.InvokeTest()","time":"2023-12-30T13:24:04.069+01:00","message":"invoked"}
+{"level":"info","time":"2023-12-30T13:24:04.069+01:00","message":"started"}
+{"level":"info","signal":"INTERRUPT","time":"2023-12-30T13:38:08.723+01:00","message":"received signal"}

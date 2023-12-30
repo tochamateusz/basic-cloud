@@ -1,0 +1,6 @@
+version: '3'
+
+tasks:
+  serve:
+    cmds:
+      - reflex -r '\.go$' -d none -s -- sh -c 'clear && richgo run ./cmd'
